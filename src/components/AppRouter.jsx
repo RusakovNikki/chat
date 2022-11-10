@@ -16,14 +16,14 @@ const AppRouter = () => {
       <Routes>
         {user ? (
           <>
-            <Route path="/chat" element={<Chat />} />
-            <Route path="*" element={<Navigate to="/chat" replace />} />
+            <Route path="/chat/chat" element={<Chat />} />
+            <Route path="*" element={<Navigate to="/chat/chat" replace />} />
             {/* в самом конце */}
           </>
         ) : (
           <>
-            <Route path="/login" element={<Login />} />
-            <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="/chat/login" element={<Login />} />
+            <Route path="*" element={<Navigate to="/chat/login" replace />} />
             {/* в самом конце */}
           </>
         )}

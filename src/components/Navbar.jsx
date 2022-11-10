@@ -30,7 +30,7 @@ const Navbar = () => {
               Выйти
             </Button>
           ) : (
-            <Link to="/login">
+            <Link to="/chat/login">
               <Button variant="contained" color={"secondary"}>
                 Логин
               </Button>
