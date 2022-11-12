@@ -19,7 +19,8 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" theme={theme}>
-      <Toolbar variant={"dense"}>
+      <Toolbar variant={"dense"} className="header__wrapper">
+        <h2 className="logo">RU-CONNECT</h2>
         <Grid container justifyContent={"flex-end"}>
           {user ? (
             <Button
