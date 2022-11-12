@@ -26,6 +26,10 @@ const Chat = () => {
   useEffect(() => {
     console.log(user)
     scrollToLastMessage?.current?.scrollIntoView()
+    document.title = "Новое сообщение"
+    setTimeout(() => {
+      document.title = "Chat"
+    }, 5000)
   }, [messages])
 
   const sendMessage = async () => {
